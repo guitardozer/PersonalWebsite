@@ -20,7 +20,7 @@
         <div class="nav">
             <div class="container">
                 <ul class="pull-left">
-                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="Home.aspx"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
                     <li><a href="#">Experience</a></li>
                     <li><a href="#">Projects</a></li>
                 </ul>
@@ -63,7 +63,7 @@
                             I was taught the importance of hard work and determination at a young age, which has led to years of success and achievement. 
                             Whether its software programming/development, software architectural design, software testing, game development, photography, 
                             or extracurricular activities, I am driven by a passion to succeed and a will to learn. Any job worth doing is worth doing well, 
-                            and any job I’m given to do is always worth doing.
+                            and any job I’m given is always worth doing.
                         </p>
                         <p><a href="About.html">Want to know more? Click here!</a></p>
                     </div>
@@ -71,10 +71,14 @@
             </div>
         </div>
 
-        <!--<div class="push"></div>-->
+        <div class="push"></div>
     </div>
 
-    <!--<div class="footer"></div>-->
+    <div class="footer">
+        <div class="container">
+            <p>All Content &copy Eugene Nitka 2015 Unless Otherwise Stated</p>
+        </div>
+    </div>
 </body>
 </html>
 

@@ -47,7 +47,7 @@
         <div class="nav">
             <div class="container">
                 <ul class="pull-left">
-                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="Home.aspx"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
                     <li><a href="#">Experience</a></li>
                     <li><a href="#">Projects</a></li>
                 </ul>
@@ -75,7 +75,7 @@
                         <h2>Send me an email:</h2>
                         <p>
                             Use the form below or email me at <a href="mailto:een5041@psu.edu" target="_top">een5041@psu.edu</a> if you'd like to inquire about work or
-                            to keep in touch.
+                            to keep in touch. All fields are required.
                         </p>
                         <p>Note: This is still a work in progress. I apologize for the inconvience.</p>
                         <form class="form-horizontal" runat="server" action="Contact.aspx" id="form1" visible="true">
@@ -98,14 +98,20 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
+                                <label for="ContactFrom" class="col-sm-2 control-label">Message: </label>
+                                <div class="col-sm-10">
                                     <textarea runat="server" id="ContactMessage" rows="4" cols="50" class="form-control" style="resize: none"></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
-                                    <asp:Button runat="server" ID="ContactSend" CssClass="btn btn-primary disabled" Text="Submit" OnClick="Send_Email" />
-                                    <!--<button type="button" class="btn btn-primary disabled" id="ContactSubmit" onclick="Send_Email" runat="server">Submit</button>-->
+                                    <!--<asp:Button runat="server" ID="ContactSend" CssClass="btn btn-primary disabled" Text="Submit" OnClick="Send_Email" />-->
+                                    <asp:LinkButton runat="server" ID="ContactSend2" CssClass="btn btn-primary disabled" Text="Submit" OnClick="Send_Email">
+                                        <i aria-hidden="true" class="glyphicon glyphicon-ok"></i>&nbsp;Submit
+                                    </asp:LinkButton>
+                                    <!--<button type="button" class="btn btn-primary disabled" id="ContactSubmit" onclick="Send_Email" runat="server">
+                                        <i aria-hidden="true" class="glyphicon glyphicon-ok"></i>&nbsp;Submit
+                                    </button>-->
                                     <button type="button" class="btn btn-default" id="ContactClear">Clear</button>
                                 </div>
                             </div>
@@ -117,7 +123,7 @@
                             <tbody>
                                 <tr>
                                     <td><span>
-                                        <img alt="Email" src="/Content/app/general/glyphicons-11-envelope.png" /></span></td>
+                                        <img alt="Email" src="/Content/app/social/social-40-e-mail.png" /></span></td>
                                     <td><a href="mailto:een5041@psu.edu" target="_top">een5041@psu.edu</a></td>
                                 </tr>
                                 <tr>
@@ -128,11 +134,26 @@
                                 <tr>
                                     <td><span>
                                         <img alt="Github" src="/Content/app/social/social-22-github.png" /></span></td>
-                                    <td><a href="https://github.com/guitardozer">github.com/guitardozer</a></td>
+                                    <td><a href="https://github.com/guitardozer">guitardozer (Eugene Nitka)</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span>
+                                        <img alt="Twitter" src="/Content/app/social/social-32-twitter.png" /></span></td>
+                                    <td><a href="https://twitter.com/guitardozer">@guitardozer</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span>
+                                        <img alt="Skype" src="/Content/app/social/social-39-skype.png" /></span></td>
+                                    <td>guitar.dozer</td>
                                 </tr>
                                 <tr>
                                     <td><span>
                                         <img alt="Steam" src="/Content/app/social/social-53-steam.png" /></span></td>
+                                    <td>guitardozer</td>
+                                </tr>
+                                <tr>
+                                    <td><span>
+                                        <img alt="Xbox" src="/Content/app/social/social-48-xbox.png" /></span></td>
                                     <td>guitardozer</td>
                                 </tr>
                             </tbody>
@@ -150,7 +171,9 @@
             <p>
                 The icons on this page were made possible by <a href="http://glyphicons.com/">glyphicons.com</a>. The Glyphicons Free package is available for both
                 commercial and personal use under the <a href="https://creativecommons.org/licenses/by/3.0/legalcode">Creative Commons Attribution License</a>.
+                Thanks Glyphicons!
             </p>
+            <p>All Content &copy Eugene Nitka 2015 Unless Otherwise Stated</p>
         </div>
     </div>
 </body>
