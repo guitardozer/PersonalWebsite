@@ -6,7 +6,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head runat="server">
     <link rel="stylesheet" href="Content/bootstrap.css" />
+    <link rel="stylesheet" href="Content/bootstrap-theme.css" />
     <link rel="stylesheet" href="Content/app/style.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
     <script type="text/javascript" src="Scripts/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="Scripts/jquery-ui-1.11.4.js"></script>
@@ -76,7 +78,7 @@
 
     <div class="footer">
         <div class="container">
-            <p>All Content &copy Eugene Nitka 2015 Unless Otherwise Stated</p>
+            <p>All icons are from <a href="http://glyphicons.com/">GLYPHICONS</a> or <a href="http://fontawesome.io">Font Awesome by Dave Gandy</a>. All Content <i class="fa fa-copyright"></i>&nbsp;Eugene Nitka 2015 Unless Otherwise Stated</p>
         </div>
     </div>
 </body>

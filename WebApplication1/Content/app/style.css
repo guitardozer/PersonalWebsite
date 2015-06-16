@@ -11,8 +11,19 @@
   src: url("http://s3.amazonaws.com/codecademy-content/courses/ltp/fonts/shift-bold.woff") format("woff");
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Shift', sans-serif;
+    font-weight: bold;
+}
+
 html, body {
     height: 100%;
+}
+
+a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #00b0ff;
+    font-weight: bold;
 }
 
 body {
@@ -90,21 +101,6 @@ body {
   font-weight: bold;
 }
 
-/*.gallery{
-    background-color: #efefef;
-    border-bottom:1px solid #dbdbdb;
-}
-
-.gallery h2{
-    color: #393c3d;
-    font-size: 24px;
-}
-
-.gallery p{
-    font-size: 15px;
-    margin-bottom: 13px;
-}*/
-
 .summary {
   background-color: #f7f7f7;
   height:auto;
@@ -115,13 +111,6 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
-
-/*.summary a {
-  color: #00b0ff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-}*/
 
 .wrapper {
     min-height: 100%;
@@ -137,4 +126,10 @@ body {
 .footer p {
     font-size: 10px;
     text-align: center;
+}
+
+.contacts td {
+    vertical-align: middle;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
 }

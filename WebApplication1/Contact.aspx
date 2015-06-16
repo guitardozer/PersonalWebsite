@@ -7,6 +7,7 @@
 <head id="Head1" runat="server">
     <link rel="stylesheet" href="Content/bootstrap.css" />
     <link rel="stylesheet" href="Content/bootstrap-theme.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="Content/app/style.css" />
 
     <script type="text/javascript" src="Scripts/jquery-2.1.4.js"></script>
@@ -75,10 +76,13 @@
                         <h2>Send me an email:</h2>
                         <p>
                             Use the form below or email me at <a href="mailto:een5041@psu.edu" target="_top">een5041@psu.edu</a> if you'd like to inquire about work or
-                            to keep in touch. All fields are required.
+                            to keep in touch.
                         </p>
                         <p>Note: This is still a work in progress. I apologize for the inconvience.</p>
                         <form class="form-horizontal" runat="server" action="Contact.aspx" id="form1" visible="true">
+                            <p style="color: red; font-weight: bold;" class="col-sm-offset-2 col-sm-10">
+                                <i class="fa fa-exclamation-circle"></i>&nbsp;All fields are required
+                            </p>
                             <div class="form-group">
                                 <label for="ContactTo" class="col-sm-2 control-label">To: </label>
                                 <div class="col-sm-3">
@@ -119,42 +123,31 @@
                     </div>
                     <div class="col-sm-offset-1 col-sm-3">
                         <h3>Other contacts:</h3>
-                        <table class="table table-condensed">
+                        <table class="table table-condensed contacts">
                             <tbody>
                                 <tr>
-                                    <td><span>
-                                        <img alt="Email" src="/Content/app/social/social-40-e-mail.png" /></span></td>
-                                    <td><a href="mailto:een5041@psu.edu" target="_top">een5041@psu.edu</a></td>
+                                    <td><i class="fa fa-2x fa-envelope"></i></td>
+                                    <td style="vertical-align: middle;"><a href="mailto:een5041@psu.edu" target="_top">een5041@psu.edu</a></td>
                                 </tr>
                                 <tr>
-                                    <td><span>
-                                        <img alt="Linkedin" src="/Content/app/social/social-18-linked-in.png" /></span></td>
-                                    <td><a href="http://www.linkedin.com/in/eugenenitka">linkedin.com/in/eugenenitka</a></td>
+                                    <td><i class="fa fa-2x fa-linkedin"></i></td>
+                                    <td style="vertical-align: middle;"><a href="http://www.linkedin.com/in/eugenenitka">linkedin.com/in/eugenenitka</a></td>
                                 </tr>
                                 <tr>
-                                    <td><span>
-                                        <img alt="Github" src="/Content/app/social/social-22-github.png" /></span></td>
-                                    <td><a href="https://github.com/guitardozer">guitardozer (Eugene Nitka)</a></td>
+                                    <td><i class="fa fa-2x fa-github"></i></td>
+                                    <td style="vertical-align: middle;"><a href="https://github.com/guitardozer">guitardozer (Eugene Nitka)</a></td>
                                 </tr>
                                 <tr>
-                                    <td><span>
-                                        <img alt="Twitter" src="/Content/app/social/social-32-twitter.png" /></span></td>
-                                    <td><a href="https://twitter.com/guitardozer">@guitardozer</a></td>
+                                    <td><i class="fa fa-2x fa-twitter"></i></td>
+                                    <td style="vertical-align: middle;"><a href="https://twitter.com/guitardozer">@guitardozer</a></td>
                                 </tr>
                                 <tr>
-                                    <td><span>
-                                        <img alt="Skype" src="/Content/app/social/social-39-skype.png" /></span></td>
-                                    <td>guitar.dozer</td>
+                                    <td><i class="fa fa-2x fa-skype"></i></td>
+                                    <td style="vertical-align: middle;">guitar.dozer</td>
                                 </tr>
                                 <tr>
-                                    <td><span>
-                                        <img alt="Steam" src="/Content/app/social/social-53-steam.png" /></span></td>
-                                    <td>guitardozer</td>
-                                </tr>
-                                <tr>
-                                    <td><span>
-                                        <img alt="Xbox" src="/Content/app/social/social-48-xbox.png" /></span></td>
-                                    <td>guitardozer</td>
+                                    <td><i class="fa fa-2x fa-steam-square"></i></td>
+                                    <td style="vertical-align: middle;">guitardozer</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -168,12 +161,7 @@
 
     <div class="footer">
         <div class="container">
-            <p>
-                The icons on this page were made possible by <a href="http://glyphicons.com/">glyphicons.com</a>. The Glyphicons Free package is available for both
-                commercial and personal use under the <a href="https://creativecommons.org/licenses/by/3.0/legalcode">Creative Commons Attribution License</a>.
-                Thanks Glyphicons!
-            </p>
-            <p>All Content &copy Eugene Nitka 2015 Unless Otherwise Stated</p>
+            <p>All icons are from <a href="http://glyphicons.com/">GLYPHICONS</a> or <a href="http://fontawesome.io">Font Awesome by Dave Gandy</a>. All Content <i class="fa fa-copyright"></i>&nbsp;Eugene Nitka 2015 Unless Otherwise Stated</p>
         </div>
     </div>
 </body>
