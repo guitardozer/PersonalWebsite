@@ -11,6 +11,10 @@
   src: url("http://s3.amazonaws.com/codecademy-content/courses/ltp/fonts/shift-bold.woff") format("woff");
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
   background-color: #f7f7f7;
 }
@@ -118,3 +122,18 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
 }*/
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+
+.footer, .push {
+    height: 4em;
+}
+
+.footer p {
+    font-size: 10px;
+}

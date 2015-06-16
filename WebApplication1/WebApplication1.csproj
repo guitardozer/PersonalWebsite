@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.html" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\app\gallery_left1.jpg" />
     <Content Include="Content\app\gallery_left2.jpg" />
