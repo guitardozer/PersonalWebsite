@@ -14,6 +14,7 @@
     <script type="text/javascript" src="Scripts/jquery-ui-1.11.4.js"></script>
     <script type="text/javascript" src="Scripts/bootstrap.js"></script>
     <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
+    <script type="text/javascript" src="Scripts/app/home.js"></script>
 
     <script type="text/javascript">
         var main = function () {
@@ -48,8 +49,8 @@
         <div class="nav">
             <div class="container">
                 <ul class="pull-left">
-                    <li><a href="Home.aspx"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
-                    <li><a href="#">Experience</a></li>
+                    <li><a href="Home"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+                    <li><a href="Experience.html">Experience</a></li>
                     <li><a href="#">Projects</a></li>
                 </ul>
                 <ul class="pull-right">
@@ -62,7 +63,7 @@
                             <li>
                                 <p class="divider"></p>
                             </li>
-                            <li><a href="Contact.aspx">More</a></li>
+                            <li><a href="Contact">More</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -109,13 +110,13 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
-                                    <!--<asp:Button runat="server" ID="ContactSend" CssClass="btn btn-primary disabled" Text="Submit" OnClick="Send_Email" />-->
+                                    <!--<asp:Button runat="server" ID="ContactSend" CssClass="btn btn-primary disabled" Text="Submit" OnClick="Send_Email" />
                                     <asp:LinkButton runat="server" ID="ContactSend2" CssClass="btn btn-primary disabled" Text="Submit" OnClick="Send_Email">
                                         <i aria-hidden="true" class="glyphicon glyphicon-ok"></i>&nbsp;Submit
-                                    </asp:LinkButton>
-                                    <!--<button type="button" class="btn btn-primary disabled" id="ContactSubmit" onclick="Send_Email" runat="server">
+                                    </asp:LinkButton>-->
+                                    <button type="button" class="btn btn-primary disabled" id="ContactSubmit" onclick="Send_Email" runat="server">
                                         <i aria-hidden="true" class="glyphicon glyphicon-ok"></i>&nbsp;Submit
-                                    </button>-->
+                                    </button>
                                     <button type="button" class="btn btn-default" id="ContactClear">Clear</button>
                                 </div>
                             </div>
@@ -127,27 +128,27 @@
                             <tbody>
                                 <tr>
                                     <td><i class="fa fa-2x fa-envelope"></i></td>
-                                    <td style="vertical-align: middle;"><a href="mailto:een5041@psu.edu" target="_top">een5041@psu.edu</a></td>
+                                    <td style="vertical-align: middle;"><a href="mailto:een5041@psu.edu" class="slide-left">een5041@psu.edu</a></td>
                                 </tr>
                                 <tr>
                                     <td><i class="fa fa-2x fa-linkedin"></i></td>
-                                    <td style="vertical-align: middle;"><a href="http://www.linkedin.com/in/eugenenitka">linkedin.com/in/eugenenitka</a></td>
+                                    <td style="vertical-align: middle;"><a href="http://www.linkedin.com/in/eugenenitka" class="slide-left" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">linkedin.com/in/eugenenitka</a></td>
                                 </tr>
                                 <tr>
                                     <td><i class="fa fa-2x fa-github"></i></td>
-                                    <td style="vertical-align: middle;"><a href="https://github.com/guitardozer">guitardozer (Eugene Nitka)</a></td>
+                                    <td style="vertical-align: middle;"><a href="https://github.com/guitardozer" class="slide-left" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">guitardozer (Eugene Nitka)</a></td>
                                 </tr>
                                 <tr>
                                     <td><i class="fa fa-2x fa-twitter"></i></td>
-                                    <td style="vertical-align: middle;"><a href="https://twitter.com/guitardozer">@guitardozer</a></td>
+                                    <td style="vertical-align: middle;"><a href="https://twitter.com/guitardozer" class="slide-left" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">@guitardozer</a></td>
                                 </tr>
                                 <tr>
                                     <td><i class="fa fa-2x fa-skype"></i></td>
-                                    <td style="vertical-align: middle;">guitar.dozer</td>
+                                    <td style="vertical-align: middle;"><span class="slide-left" >guitar.dozer</span></td>
                                 </tr>
                                 <tr>
                                     <td><i class="fa fa-2x fa-steam-square"></i></td>
-                                    <td style="vertical-align: middle;">guitardozer</td>
+                                    <td style="vertical-align: middle;"><span class="slide-left" >guitardozer</span></td>
                                 </tr>
                             </tbody>
                         </table>
